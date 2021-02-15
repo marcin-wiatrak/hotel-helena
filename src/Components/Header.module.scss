@@ -39,6 +39,11 @@
         transition: 0.4s;
       }
       
+    .active {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+    }
       .active .bar1 {
         -webkit-transform: translateY(1px) translateX(1px) rotate(-45deg);
         transform: translateY(7px) translateX(-1px) rotate(-45deg);
