@@ -11,3 +11,4 @@ cd ./hotel-helena/
 npm install
 npm start
 ````
+test
