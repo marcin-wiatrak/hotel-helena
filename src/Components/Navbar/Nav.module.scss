@@ -1,0 +1,65 @@
+.logo {
+    fill: red;
+}
+
+
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0vw;
+    height: 100vh;
+    background-color: rgba($color: #fff, $alpha: .95);
+    text-align: center;
+    overflow: hidden;
+    transition: .3s width;
+    z-index: 999;
+
+    
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+
+    li{
+        
+        text-align: center;
+        transition: .3s;
+        &:hover{
+            //Trzeba nad tym pomysleć
+        }
+
+        &:hover a {
+            color: white;
+        }
+        
+    }
+
+    a{ 
+        display: block;
+        width: 100%;
+        height: 40px;
+        text-decoration: none;
+        color: #777;
+        text-transform: uppercase;
+        line-height: 40px;
+        
+    }
+
+    
+}
+
+.activeLink{
+    background-color: #F4B304;
+
+    color: white;
+}
+
+.activeMenu {
+    width: 90vw;
+}
