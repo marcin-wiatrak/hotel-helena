@@ -1,12 +1,43 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1366px) {
+        @content;
+    }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
 .wrapper {
     position: relative;
     background-image: url('../assets/images/bg.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     height: 250px;
+
+    @include for-desktop-up {
+        height: 100vh;
+    }
 }
+
+
 .navbar {
     position: relative;
     height: 40px;
@@ -16,7 +47,15 @@
     justify-content: center;
     align-items: center;
 
+    .logo {
+        height: 70%;
+    }
 
+    @include for-desktop-up {
+        height: 90px;
+    }
+
+    
     .hamburger {
         position: absolute;
         right: 10px;
@@ -28,6 +67,9 @@
         outline: none;
         border: none;
         z-index: 1000;
+        @include for-desktop-up {
+            display: none;
+        }
       }
       
       .bar1, .bar2, .bar3 {
@@ -69,6 +111,12 @@
 .slogan {
     position: absolute;
     left: 10px;
-    bottom: 25px;
+    bottom: 30px;
     width: 70%;
+    filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
+    
+    @include for-big-desktop-up {
+        width: 50%;
+        bottom: 80px;
+    }
 }
