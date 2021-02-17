@@ -1,0 +1,110 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1366px) {
+        @content;
+    }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@include for-desktop-up {
+    .wrapper {
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mainNav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .navElement {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    line-height: 90px;
+                    padding: 0 20px;
+                    font-size: 14px;
+                    transition: ease .3s color;
+
+                    &:hover {
+                        color: #f4b304
+                    }
+                }
+            }
+        }
+    }
+
+    .activeLink {
+        background-color: #FFF;
+        color: #7c7c7c !important;
+    }
+}
+
+@media (max-width: 1365px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0vw;
+        height: 100vh;
+        background-color: rgba($color: #fff, $alpha: 0.95);
+        text-align: center;
+        overflow: hidden;
+        transition: 0.3s width;
+        z-index: 999;
+
+        .mainNav {
+            list-style: none;
+            width: 100%;
+
+            .navElement {
+                text-align: center;
+                transition: 0.3s;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 40px;
+                    text-decoration: none;
+                    color: #777;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .activeLink {
+        background-color: #f4b304;
+        color: white !important;
+    }
+}
+
+
+
+.activeMenu {
+    width: 90vw;
+}
