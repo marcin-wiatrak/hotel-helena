@@ -1,59 +1,69 @@
-.footer{
-    font-size: 0.8rem;
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #424242;
+    margin-top: 15px;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
 
-
-    margin-top: 80px;
-    width: 100%;
-    height: 350px;
-
-    .info{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0;
-        grid-template-areas:
-            ". ."
-            "map map";
-        align-items: center;
-        justify-items: center;
-        width: 100%;
-        height: 320px;
-        background-color: #424242;
-
-        .footerNav {
-            list-style: none;
-
-            .footerNavElement {
-                margin: 2px auto
-            }
+    .footerContainer {
+        text-align: center;
+        width: 50%;
+        padding: 15px;
+        font-size: 10px;
+        &:first-of-type {
+            border-right: dashed 1px #545454;
         }
+        &:nth-child(2) {
+            line-height: 2;
+            color: #fff;
+        }
+    }
+    .footerContainerMap {
+        padding: 10px;
+        margin-top: 10px;
 
-        .text{
-            // display: flex;
-            // justify-content: flex-start;
-            // align-items: center;
-            width: 50%;
-            text-transform: uppercase;
-            font-weight: 400;
-            color: #7C7C7C;
+        iframe {
+            border: none;
+        }
+    }
+    .footerNav {
+        list-style: none;
+        // padding: 15px 15px;
+        margin: 10px;
+    
+        .footerNavElement {
+            margin: 3px 0;
+            padding: 0;
+            text-align: left;
+    
             
-        }
-
-        .address {
-            text-align: center;
-
-            .heading {
-                font-size: 1.1rem;
-            }
-            .paragraph {
-                margin: 3px 0;
+            a {
+                color: #7c7c7c;
+                text-decoration: none;
+                text-transform: uppercase;
+    
+                &::before {
+                    content: '>';
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: #F4B304;
+                }
             }
         }
     }
 
-
+    .creator {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        background-color: #303030;
+        width: 100%;
+        padding: 15px;
+        font-size: 10px;
+    }
 }
 
-.map {
-    grid-area: map;
-}
