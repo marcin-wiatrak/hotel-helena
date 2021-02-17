@@ -1,7 +1,5 @@
-import React from 'react'; 
+import React from 'react';
 
-const Pokoje = () => (
-    <h3>Pokoje works</h3>
-)
+const Pokoje = () => <h3>Pokoje works</h3>;
 
 export default Pokoje;
