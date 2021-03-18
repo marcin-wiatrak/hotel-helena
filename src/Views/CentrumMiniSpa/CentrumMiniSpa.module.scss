@@ -55,19 +55,10 @@
     color: #F4B304;
     font-weight: 400;
     text-shadow: 10px -10px 0 rgba(244, 180, 4, 0.226);
-    margin-bottom: 20px;
-    
-    @include for-desktop-up {
-        font-size: 5rem;
-    }
 }
 
 .paragraph {
     margin: 10px auto;
-    @include for-desktop-up {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
 }
 
 .image {
