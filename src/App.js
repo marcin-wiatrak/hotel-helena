@@ -8,6 +8,7 @@ import BarISalaGier from './Views/BarISalaGier/BarISalaGier';
 import CentrumMiniSpa from './Views/CentrumMiniSpa/CentrumMiniSpa';
 import Kontakt from './Views/Kontakt/Kontakt';
 import Regulamin from './Views/Regulamin/Regulamin';
+import BonTurystyczny from './Views/BonTurystyczny/BonTurystyczny';
 
 const App = () => (
     <>
@@ -25,8 +26,9 @@ const App = () => (
             <Route path="/bar-i-sala-gier">
                 <BarISalaGier />
             </Route>
-            {/*<Route path="/">/!* <Main /> *!/</Route>*/}
-            {/*<Route path="/">/!* <Main /> *!/</Route>*/}
+            <Route path="/bon-turystyczny">
+                <BonTurystyczny />
+            </Route>
             <Route path="/regulamin">
                 <Regulamin />
             </Route>

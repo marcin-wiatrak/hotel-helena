@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Hotel.module.scss';
 import hotel_front from '../../assets/images/hotel_front.jpg';
+import hotel_2 from '../../assets/images/DJI_0010-8.jpg';
+import hotel_3 from '../../assets/images/DJI_0016-11.jpg';
 
 const Hotel = () => (
     <div className={styles.outerWrapper}>
@@ -22,12 +24,23 @@ const Hotel = () => (
                 się również pomieszczenie przystosowane do pobytu osób
                 niepełnosprawnych.
             </p>
-
-            <img
-                src={hotel_front}
-                className={styles.image}
-                alt="Wejście główne hotelu Helena"
-            />
+            <div className={styles.imgWrapper}>
+                <img
+                    src={hotel_front}
+                    className={styles.image}
+                    alt="Zdjęcie Hotelu Helena 1"
+                />
+                <img
+                    src={hotel_2}
+                    className={styles.image}
+                    alt="Zdjęcie Hotelu Helena 2"
+                />
+                <img
+                    src={hotel_3}
+                    className={styles.image}
+                    alt="Zdjęcie Hotelu Helena 3"
+                />
+            </div>
         </section>
     </div>
 );

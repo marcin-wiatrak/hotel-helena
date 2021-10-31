@@ -29,7 +29,7 @@
 }
 
 .wrapper {
-  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 40px, 100% 0%, 100% calc(100% - 40px), 0% 100%);
   position: relative;
   width: 85%;
   margin: -15px auto 0;
@@ -44,7 +44,7 @@
   @include for-big-desktop-up {
     margin: -100px auto 0;
     width: 1600px;
-    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 40px, 100% 0%, 100% calc(100% - 40px), 0% 100%);
   }
 }
 

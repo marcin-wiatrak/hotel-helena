@@ -44,11 +44,6 @@ const Navbar = ({ isVisible }) => {
                     </NavLink>
                 </li>
                 <li className={styles.navElement}>
-                    <NavLink activeClassName={styles.activeLink} to="/covid-19">
-                        COVID-19
-                    </NavLink>
-                </li>
-                <li className={styles.navElement}>
                     <NavLink
                         activeClassName={styles.activeLink}
                         to="/regulamin"

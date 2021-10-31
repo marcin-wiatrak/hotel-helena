@@ -29,14 +29,14 @@
 }
 
 .wrapper {
-    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 40px, 100% 0%, 100% calc(100% - 40px), 0% 100%);
     position: relative;
     width: 85%;
     margin: -15px auto 0;
     padding: 10% 20px;
     background-color: #fff;
     color: #777;
-    
+
     @include for-desktop-up {
         margin: -60px auto 0;
         width: 1200px;
@@ -44,7 +44,7 @@
     @include for-big-desktop-up {
         margin: -100px auto 0;
         width: 1600px;
-        clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 40px, 100% 0%, 100% calc(100% - 40px), 0% 100%);
     }
 }
 
@@ -55,13 +55,33 @@
     color: #F4B304;
     font-weight: 400;
     text-shadow: 10px -10px 0 rgba(244, 180, 4, 0.226);
+    margin-bottom: 20px;
+
+    @include for-desktop-up {
+        font-size: 5rem;
+    }
 }
 
 .paragraph {
     margin: 10px auto;
+    @include for-desktop-up {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
 }
 
-.image {
-    width: 80%;
-    margin: 10px 0 10px -35px;
+.imgWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    .image {
+        width: 80%;
+        margin-top: -15px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+        &:nth-child(even) {
+            justify-self: flex-end;
+            margin-left: auto;
+            z-index: 1;
+        }
+    }
 }
