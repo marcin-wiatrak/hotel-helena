@@ -67,10 +67,7 @@ const Regulamin = () => {
                                 </li>
                                 <li>
                                     Faktury VAT mogą być wystawiane w dniu
-                                    wyjazdu po przedłożeniu oryginału paragonu
-                                    fiskalnego. Istnieje możliwość zdeponowania
-                                    paragonu w recepcji na prośbę Klienta w celu
-                                    późniejszego wystawienia faktury VAT.
+                                    wyjazdu.
                                 </li>
                             </ul>
                         </li>
@@ -84,9 +81,7 @@ const Regulamin = () => {
                             Hotel świadczy usługi zgodnie ze swoją kategorią. W
                             przypadku jakichkolwiek zastrzeżeń dotyczących
                             świadczonych usług, o fakcie tym należy poinformować
-                            recepcję. 10. Gość hotelowy nie ma prawa przekazywać
-                            pokoju innym osobom, nawet przed upływem doby
-                            hotelowej, za którą zapłacił.
+                            recepcję.
                         </li>
                         <li>
                             Gość hotelowy nie ma prawa przekazywać pokoju innym

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './BarISalaGier.module.scss';
 
-import hotel_front from '../../assets/images/hotel_front.jpg';
 import bar_1 from '../../assets/images/barsalagier/1.jpg';
 import bar_2 from '../../assets/images/barsalagier/2.jpg';
 import bar_3 from '../../assets/images/barsalagier/3.jpg';
@@ -10,11 +9,8 @@ import bar_5 from '../../assets/images/barsalagier/5.jpg';
 import bar_6 from '../../assets/images/barsalagier/6.jpg';
 import bar_7 from '../../assets/images/barsalagier/7.jpg';
 import bar_8 from '../../assets/images/barsalagier/8.jpg';
-import bar_9 from '../../assets/images/barsalagier/9.jpg';
-import bar_10 from '../../assets/images/barsalagier/10.jpg';
-import bar_11 from '../../assets/images/barsalagier/11.jpg';
 
-const BarISalaGier = (props) => (
+const BarISalaGier = () => (
     <div className={styles.outerWrapper}>
         <section className={styles.wrapper}>
             <h2 className={styles.heading}>Bar i Sala gier</h2>
@@ -62,21 +58,6 @@ const BarISalaGier = (props) => (
                     src={bar_8}
                     className={styles.image}
                     alt="Zdjęcie baru i salonu gier 8"
-                />
-                <img
-                    src={bar_9}
-                    className={styles.image}
-                    alt="Zdjęcie baru i salonu gier 8"
-                />
-                <img
-                    src={bar_10}
-                    className={styles.image}
-                    alt="Zdjęcie baru i salonu gier 10"
-                />
-                <img
-                    src={bar_11}
-                    className={styles.image}
-                    alt="Zdjęcie baru i salonu gier 11"
                 />
             </div>
         </section>
