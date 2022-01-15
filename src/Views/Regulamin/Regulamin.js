@@ -36,9 +36,13 @@ const Regulamin = () => {
                         <li>
                             Gość powinien dokonać rejestracji pobytu w recepcji
                             na podstawie dokumentu zawierającego zdjęcie (np.
-                            dowód osobisty, paszport, prawo jazdy). Warunkiem
-                            zameldowania Gościa jest podpisanie karty
-                            meldunkowej.
+                            dowód osobisty, paszport, prawo jazdy). W przypadku
+                            odmowy okazania dokumentu w sposób umożliwiający
+                            zameldowanie, Recepcjonista ma obowiązek odmówić
+                            wydania klucza. Warunkiem zameldowania Gościa jest
+                            podpisanie karty meldunkowej. Dokonując ww
+                            czynności, Gość potwierdza, iż zapoznał się i
+                            akceptuje warunki Regulaminu
                         </li>
                         <li>
                             Należność za wynajem pokoi i usługi dodatkowe
@@ -64,6 +68,11 @@ const Regulamin = () => {
                                     za pozostałe usługi należność regulowana
                                     jest przy wyjeździe kartą płatniczą lub
                                     gotówką;
+                                </li>
+                                <li>
+                                    w przypadku rezygnacji Gościa za pobyt w
+                                    trakcie trwania doby hotelowej, Hotel nie
+                                    zwraca opłaty za daną dobę hotelową;
                                 </li>
                                 <li>
                                     Faktury VAT mogą być wystawiane w dniu
@@ -173,8 +182,28 @@ const Regulamin = () => {
                             </ul>
                         </li>
                         <li>
-                            W Hotelu obowiązuje zakaz organizowania imprez w
-                            pokojach hotelowych
+                            W pokojach hotelowych obowiązuje zakaz organizowania
+                            imprez.
+                        </li>
+                        <li>
+                            W pokojach hotelowych nie można przechowywać
+                            ładunków niebezpiecznych, materiałów łatwopalnych,
+                            wybuchowych i iluminacyjnych.
+                        </li>
+                        <li>
+                            Zakazuje się prowadzenia akwizycji i sprzedaży
+                            obnośnej.
+                        </li>
+                        <li>
+                            Zabrania się nadmiernego hałasowania na terenie
+                            Hotelu. Jeśli Gość pod wpływem alkoholu i/lub
+                            środków odurzających zakłóca spokojny pobyt Gości,
+                            może zostać z niego usunięty.
+                        </li>
+                        <li>
+                            Gościom nie wolno dokonywać jakichkolwiek zmian w
+                            pokojach hotelowych (przestawianie mebli, łóżek
+                            itp.)
                         </li>
                     </ol>
                 </div>
